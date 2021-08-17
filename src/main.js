@@ -1,6 +1,7 @@
 import $ from "jquery";
 import "./css/index.css";
 import "./less/index.less";
+import "./asset/fonts/iconfont.css";
 
 // 引入图片-使用
 import imgUrl from "./asset/cxk.gif";
