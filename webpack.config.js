@@ -15,13 +15,20 @@ module.exports = {
   ],
   module: {
     rules: [
+      //css
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      //less
       {
         test: /\.less$/i,
         use: ["style-loader", "css-loader", "less-loader"],
+      },
+      //图片
+      {
+        test: /\.(png|jpg|gif|jpeg)$/i,
+        type: "asset",
       },
     ],
   },
