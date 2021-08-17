@@ -30,11 +30,23 @@ module.exports = {
         test: /\.(png|jpg|gif|jpeg)$/i,
         type: "asset",
       },
+      //字体图标
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/i,
         type: "asset/resource",
         generator: {
           filename: "fonts/[name]-[hash:6][ext]",
+        },
+      },
+      //es高级语法
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
         },
       },
     ],
