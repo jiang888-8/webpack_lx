@@ -1,4 +1,5 @@
 import $ from "jquery";
+import "./css/index.css";
 
 $(function () {
   $("#ys li:nth-child(odd)").css("color", "#04f4bc");

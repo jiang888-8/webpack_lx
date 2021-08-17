@@ -13,4 +13,12 @@ module.exports = {
       template: "./public/index.html", // 以此为基准生成打包后html文件
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
