@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "server":"webpack server --port 80 --open"
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +20,8 @@
     "less-loader": "^10.0.1",
     "style-loader": "^3.2.1",
     "webpack": "^5.50.0",
-    "webpack-cli": "^4.8.0"
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "jquery": "^3.6.0"

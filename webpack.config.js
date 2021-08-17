@@ -51,4 +51,11 @@ module.exports = {
       },
     ],
   },
+  //配置端口，自动打开
+  // devServer: {
+  //   port: 3000, // 端口号
+  //   open: true,
+  // },
+  mode: "development", //开发模式
+  // mode: "production", //上线模式（极简模式）
 };
